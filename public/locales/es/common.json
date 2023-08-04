@@ -1,0 +1,410 @@
+{
+  "batchNumber": "Lote nº",
+  "backToStart": "Volver al inicio",
+  "qrSuccessful": "¡QR leído con éxito!",
+  "batchIdentified": "Lote {{batch}} identificado.",
+  "dairy": "Quesería",
+  "cheeseType": "Tipo de queso",
+  "delete": "Eliminar",
+  "name": "Nombre",
+  "add": "Agregar",
+  "undefined": "No definido",
+  "cancel": "Cancelar",
+  "confirm": "Confirmar",
+  "signOut": "Cerrar sesión",
+  "revertChanges": "Deshacer cambios",
+  "save": "Guardar cambios",
+  "edit": "Editar",
+  "create": "Crear",
+  "fileUploaded": "Archivo subido correctamente",
+  "batch": "Lote",
+  "producers": "Productores artesanales de queso - INALE",
+  "selectDairy": "Selecciona una quesería",
+  "sidebar": {
+    "main": "Principal",
+    "addAdmin": "Agregar admin",
+    "dairies": "Queserías",
+    "cheeseTypes": "Tipos de queso",
+    "reports": "Reportes",
+    "batches": "Lotes"
+  },
+  "navbar": {
+    "searchIcon": "Icono de búsqueda",
+    "search": "Buscar"
+  },
+  "table": {
+    "dairies": "Queserías",
+    "batch": "Lote",
+    "elaborationDate": "Fecha de elaboración"
+  },
+  "inputs": {
+    "selectOption": "Selecciona una opción"
+  },
+  "forgotStep": {
+    "title": "Corrección de etapas",
+    "form": {
+      "title": {
+        "curd": "Etapa de Coagulación y Cocción",
+        "salting": "Etapa de Salmuera",
+        "maturation": "Etapa de Maduración"
+      },
+      "initialVolume": "Volumen inicial en Litros",
+      "weightBeforeSalting": "Peso previo a salmuera en Kilos",
+      "weightAfterMaturation": "Peso final en Kilos",
+      "startDate": "Fecha de Inicio",
+      "startTime": "Hora de Inicio",
+      "endDate": "Fecha de Fin",
+      "endTime": "Hora de Fin",
+      "save": "Guardar etapas",
+      "cancel": "Volver",
+      "betweenCurdAndSalting": "Entre cocción y salmuera"
+    },
+    "confirmation": {
+      "please": "Por favor, confirma que actualmente el lote {{batch}} se encuentra en la etapa de {{step}}.",
+      "pleaseFinished": "Por favor, confirma que actualmente el lote {{batch}} se encuentra finalizado.",
+      "systemCheck": "El sistema corroborará los valores de las etapas declaradas dentro del plazo seleccionado para la certificación del lote.",
+      "confirm": "Confirmar etapa",
+      "cancel": "Volver a corrección"
+    }
+  },
+  "step": {
+    "NotStarted": "No Empezado",
+    "Started": "Empezado",
+    "Curd": "Coagulación y Cocción",
+    "CurdFinished": "Prensado",
+    "Salting": "Salmuera",
+    "Maturation": "Maduración",
+    "Finished": "Finalizado",
+    "forgot": "Me olvidé de una etapa",
+    "successfullyStarted": "¡Lote {{batchName}} se encuentra ahora en la etapa de {{step}}!"
+  },
+  "generateQr": {
+    "generateQr": "Generar QR(s)",
+    "downloadQr": "Descargar QR(s)",
+    "description": "Selecciona las queserías y la cantidad de lotes. Una vez completado el pedido, dé click a Descargar QR. Se descargará un Zip con una carpeta por quesería.",
+    "dairyName": "Nombre de la quesería",
+    "batchQuantity": "Cantidad de lotes",
+    "batchTotal": "Lotes en total",
+    "addDairy": "Agregar quesería",
+    "qrTag": "Quesería {{dairyName}} - Lote {{batchNumber}}",
+    "dairyLimit": "No hay más queserías disponibles",
+    "noDairySelected": "No se seleccionó ninguna quesería para generar los códigos QR"
+  },
+  "startBatch": {
+    "volumePlaceholder": "Volumen (lts)",
+    "volumeText": "Volumen inicial",
+    "newQrIdentified": "¡Nuevo QR identificado!",
+    "description": "Para dar inicio a un lote, por favor ingresa un nombre para el lote y ",
+    "descriptionPart2A": "selecciona el tipo de queso que se elaborará",
+    "descriptionPart2B": "presiona {{buttonText}}",
+    "batchName": "Nombre del lote",
+    "error": "No se pudo iniciar el lote, vuelve a leer el QR e inténtalo de vuelta.",
+    "required": "El tipo de queso es requerido para iniciar el lote",
+    "start": "Iniciar lote"
+  },
+  "startCurd": {
+    "description": "Comienza el proceso de coagulación y cocción ahora o vuelve a escanear el QR cuando sea el momento de comenzar.",
+    "batchStarted": "¡Lote {{batch}} ha sido iniciado con éxito!",
+    "error": "No se pudo comenzar la etapa de coagulación y cocción, vuelve a leer el QR e inténtalo de vuelta.",
+    "start": "Empezar coagulación y cocción"
+  },
+  "finishCurd": {
+    "error": "No se pudo terminar la etapa de coagulación y cocción, vuelve a leer el QR e inténtalo de vuelta.",
+    "curdFinished": "La etapa de coagulación y cocción ha finalizado.",
+    "finish": "Finalizar etapa de coagulación y cocción"
+  },
+  "startSalting": {
+    "weightPlaceholder": "Peso (kgs)",
+    "weight": "Peso pre salmuera",
+    "error": "No se pudo comenzar la salmuera, vuelve a leer el QR e inténtalo de vuelta.",
+    "start": "Empezar salmuera"
+  },
+  "startMaturation": {
+    "error": "No se pudo comenzar la maduración, vuelve a leer el QR e inténtalo de vuelta.",
+    "start": "Empezar maduración"
+  },
+  "finishBatch": {
+    "weightPlaceholder": "Peso (kgs)",
+    "step": "¡Lote {{batch}} se encuentra en la etapa de maduración!",
+    "weight": "Peso post maduración",
+    "error": "No se pudo finalizar el lote, vuelve a leer el QR e inténtalo de vuelta.",
+    "batchFinished": "¡Lote {{batchName}} finalizado con éxito!",
+    "finish": "Finalizar lote"
+  },
+  "batchInfo": {
+    "step": "Etapa actual",
+    "startDate": "Fecha de inicio"
+  },
+  "addAdmin": {
+    "title": "Agregar Nuevo Admin",
+    "success": "Se ha agregado al usuario {{userEmail}} como admin.",
+    "description": "Para agregar un nuevo admin ingrese su email.",
+    "submit": "Agregar admin"
+  },
+  "notAuthorized": {
+    "title": "No Autorizado",
+    "descriptionSignedIn": "No fue posible validar tus credenciales y esta sección es exclusiva para administradores. Si deseas ser administrador, por favor solicítale a un administrador que te envíe una invitación."
+  },
+  "cheeseTypes": {
+    "name": "Tipos de queso",
+    "productInfo": "Información del producto",
+    "registrationCode": "Número de registro (MSP)",
+    "bromatologicalForm": "Ficha bromatológica (PDF)",
+    "bromatologicalFormFileName": "archivo.pdf",
+    "bromatologicalFormNotDefined": "No definida",
+    "uploadFile": "Adjuntar archivo",
+    "elaborationProcess": "Proceso de fabricación",
+    "variable": "Variable",
+    "minValue": "Valor mínimo",
+    "maxValue": "Valor máximo",
+    "temperature": "Temperatura",
+    "degrees": "˚C",
+    "time": "Tiempo",
+    "hours": "hs",
+    "salinity": "Salinidad",
+    "salinityUnit": "˚B",
+    "humidity": "Humedad",
+    "percentage": "%",
+    "cheeseTypeDeleted": "El tipo de queso se eliminó correctamente",
+    "cheeseTypeRestored": "El tipo de queso se restauró correctamente",
+    "cheeseTypeCreated": "El tipo de queso se creó correctamente",
+    "cheeseTypeUpdated": "El tipo de queso se actualizó correctamente",
+    "errorLoadingCheeseTypes": "Error cargando tipos de queso",
+    "deleteCheeseType": "Eliminar tipo de queso",
+    "deleteCheeseTypeText": "Eliminar tipo de queso",
+    "showDeleted": "Mostrar eliminados",
+    "list": "Lista de tipos de queso",
+    "createCheeseType": "Crear tipo de queso"
+  },
+  "dairies": {
+    "name": "Nombre de la quesería",
+    "companyNumber": "Número de Empresa",
+    "rut": "RUT",
+    "registrationCode": "Matrícula",
+    "endorsementDate": "Fecha de refrendación",
+    "bromatologicalRegistry": "Registro bromatológico",
+    "dicoseNumber": "Dicose",
+    "companyOwner": "Titular de la empresa",
+    "address": "Dirección",
+    "contactPhone": "Número de contacto",
+    "errorLoadingDairies": "Error cargando queserías",
+    "errorLoadingDairy": "Error cargando la quesería",
+    "activeDairies": "Queserías activas",
+    "list": "Listado de queserías",
+    "registeredEmployees": "Empleados registrados",
+    "editProfile": "Editar perfil",
+    "enabledSince": "Habilitada el {{date}}",
+    "enabledDate": "Fecha de habilitación",
+    "create": "Crear",
+    "createDairy": "Crear quesería",
+    "deleteDairy": "Eliminar quesería",
+    "showDeleted": "Mostrar eliminadas",
+    "deleteDairyText": "La quesería se podrá restaurar después de eliminada",
+    "companyInfo": "Información de la empresa",
+    "department": "Departamento",
+    "dairyUpdated": "La quesería se actualizó correctamente",
+    "dairyNotUpdated": "No se encontraron cambios en la quesería",
+    "dairyCreated": "La quesería se creó correctamente",
+    "dairyDeleted": "La quesería se eliminó correctamente",
+    "dairyRestored": "La quesería se restauró correctamente",
+    "employees": {
+      "name": "Empleados",
+      "addEmployee": "Agregar empleado",
+      "deleteEmployeeTitle": "Eliminar empleado",
+      "document": "Cédula de identidad",
+      "deleteEmployeeText": "¿Estás seguro de que quieres eliminar a este empleado?"
+    },
+    "cheeseTypes": {
+      "batchesInProduction": "Lotes en producción",
+      "errorLoadingDairyCheeseTypes": "Error cargando tipos de queso",
+      "name": "Tipos de queso",
+      "deleteDairyCheeseTypeTitle": "Eliminar tipo de queso",
+      "deleteDairyCheeseTypeText": "¿Estás seguro de que quieres eliminar a este tipo de queso?",
+      "showDeleted": "Mostrar eliminados",
+      "addCheeseType": "Agregar un tipo de queso"
+    }
+  },
+  "pagination": { "previous": "Anterior", "next": "Siguiente" },
+  "errors": {
+    "dairyNotFound": "Hubo un error, la quesería no se encontró. Comunícate con nosotros.",
+    "dairyWithoutCheeseType": "No se encontró ningún tipo de queso para la quesería. Asóciale un tipo de queso y vuelve a intentarlo.",
+    "batchNotFound": "Hubo un error, el lote no se encontró. Comunícate con nosotros.",
+    "cheeseTypeNotFound": "Hubo un error, el tipo de queso no se encontró. Comunícate con nosotros.",
+    "default": "Ocurrió un error, inténtalo nuevamente más tarde.",
+    "batchNotFinished": "No se pudo finalizar el lote, recarga la página e inténtalo nuevamente.",
+    "batchCannotBeFinished": "No se pudo finalizar el lote, recarga la página e inténtalo nuevamente.",
+    "batchInfoCannotBeStored": "No se pudo finalizar el lote, ya que hubo un error guardando la información, inténtalo nuevamente más tarde.",
+    "cannotFindCertificateMessage": "No se encontró mensaje de certificación para este lote. Refresca la página y vuelve a intentarlo o comunícate con nosotros si no se resuelve.",
+    "userAlreadyInvited": "El usuario ya fue invitado.",
+    "unrecognizedStartingBatch": "Error no reconocido inicializando lote, inténtalo nuevamente más tarde.",
+    "unrecognizedUpdatingCheeseType": "Error no reconocido actualizando tipo de queso, inténtalo nuevamente más tarde.",
+    "unrecognizedDeletingCheeseType": "Error no reconocido eliminando el tipo de queso, inténtalo nuevamente más tarde.",
+    "unrecognizedRestoringCheeseType": "Error no reconocido restaurando el tipo de queso, inténtalo nuevamente más tarde.",
+    "unrecognizedCreatingCheeseType": "Error no reconocido creando tipo de queso, inténtalo nuevamente más tarde.",
+    "unrecognizedGettingCheeseType": "Error no reconocido obteniendo tipos de queso, inténtalo nuevamente más tarde.",
+    "unrecognizedGettingDairy": "Error no reconocido obteniendo la quesería, inténtalo nuevamente más tarde.",
+    "unrecognizedGettingBatch": "Error no reconocido obteniendo el lote, inténtalo nuevamente más tarde.",
+    "unrecognizedGettingSensorsData": "Error no reconocido obteniendo la información de los sensores para este lote, inténtalo nuevamente más tarde.",
+    "unrecognizedUpdatingDairy": "Error no reconocido actualizando la quesería, inténtalo nuevamente más tarde.",
+    "unrecognizedCreatingDairy": "Ocurrió un error al intentar crear la quesería, inténtalo nuevamente más tarde.",
+    "unrecognizedDeletingDairy": "Ocurrió un error al intentar eliminar la quesería, inténtalo nuevamente más tarde.",
+    "unrecognizedRestoringDairy": "Ocurrió un error al intentar restaurar la quesería, inténtalo nuevamente más tarde.",
+    "unrecognizedGettingDairyLocationStats": "Ocurrió un error al intentar obtener las estadísticas de las queserías por departamento, inténtalo nuevamente más tarde",
+    "unrecognizedGettingFailedCertifications": "Ocurrió un error al intentar obtener las certificaciones rechazadas, inténtalo nuevamente más tarde",
+    "dairyWithRutAlreadyExists": "Ya existe una quesería con el rut ingresado, revisa la información e inténtalo nuevamente.",
+    "cheeseTypeWithNameAlreadyExists": "Ya existe un tipo de queso con el nombre ingresado, revisa la información e inténtalo nuevamente.",
+    "employeeWithDocumentAlreadyExist": "Ya existe un empleado con la cédula ingresada, revisa la información e inténtalo nuevamente.",
+    "invalidMail": "Email no válido",
+    "invalidQR": "El QR parece no ser válido. Vuelva a escanearlo o pruebe con otro QR.",
+    "unrecognizedGettingBatches": "Error no reconocido obteniendo lotes, inténtalo nuevamente más tarde.",
+    "unrecognizedGettingStats": "Error no reconocido obteniendo estadísticas, inténtalo nuevamente más tarde.",
+    "consistencyErrorGettingBatchesByDate": "La fecha de comienzo tiene que ser previa a la fecha de fin",
+    "unrecognizedCountingSensorReads": "Ocurrió un error al intentar obtener la lectura de los sensores, inténtalo nuevamente más tarde."
+  },
+  "certification": {
+    "sucessfullyCertified": {
+      "title": "Lote certificado",
+      "description": "Al escanear el QR el consumidor final podrá ver la certificación del INALE",
+      "button": "Ver certificado"
+    },
+    "waitingReview": {
+      "title": "Lote no certificado aún",
+      "description": "El lote no cuenta aún con la certificación del INALE, ya sea porque no se culminaron todas las etapas o porque está en proceso de revisión",
+      "willBeChecked": "INALE revisará las condiciones de su lote para otorgarle o no la certificación correspondiente. Esta certificación usualmente queda habilitada dentro de los próximos 10 minutos, por lo que le recomendamos volver a escanear el QR y verificarla pasado ese tiempo."
+    },
+    "certificationFailed": {
+      "title": "Lote no certificado",
+      "description": "El lote no cuenta con la certificación del INALE por no haber cumplido todos los parámetros establecidos durante su elaboración.",
+      "button": "Ver certificado",
+      "reasonForFailure": "Motivo de rechazo",
+      "undefinedReason": "Motivo no definido"
+    },
+    "certificationResult": {
+      "title": "Certificación de calidad",
+      "certifiedDescription": "Este queso ha recibido la certificación por parte del INALE por haber cumplido todos los parámetros establecidos durante su elaboración.",
+      "notCertifiedDescription": "Este queso no ha recibido la certificación por parte del INALE por no haber cumplido todos los parámetros establecidos durante su elaboración.",
+      "producedBy": "Elaborado por",
+      "certificationDate": "Fecha de certificación"
+    }
+  },
+  "batchInfoCard": {
+    "title": "Información del lote",
+    "batchNumber": "# Lote",
+    "beginDate": "Fecha de inicio",
+    "cheese": "Queso"
+  },
+  "batchStagesCard": {
+    "title": "Proceso de fabricación",
+    "curd": "Coagulación y Cocción",
+    "salting": "Salmuera",
+    "maturation": "Maduración",
+    "variable": "Variable",
+    "result": "Resultado",
+    "range": "Intervalo"
+  },
+  "batches": {
+    "title": "Listado de certificados",
+    "inProcess": "Lotes\nen producción",
+    "certified": "Lotes\ncertificados",
+    "rejected": "Lotes\nrechazados",
+    "list": {
+      "batch": "Lote",
+      "batchDate": "Fecha"
+    },
+    "form": {
+      "submit": "Filtrar",
+      "error": "La fecha de comienzo tiene que ser previa a la fecha de fin"
+    }
+  },
+  "producerStart": {
+    "title": "Producción artesanal de queso - INALE",
+    "welcome": "Te damos la bienvenida a la aplicación de producción artesanal de queso, por favor lee un código QR recibido de INALE para comenzar.",
+    "ifNoQrCode": "Si no tienes un código QR, por favor pídele a INALE que te brinde algunos."
+  },
+  "emptyStates": {
+    "noDairies": "¡No hay queserías en el sistema aún! Crea la primera en \"Queserías\" y vuelve a esta página para generar QRs",
+    "noCheeseTypesToChoose": "No hay más tipos de queso para agregar a la quesería.",
+    "noSensorReadsYet": "Aún no hay lecturas de sensores para mostrar, selecciona una quesería y confirma para buscar lecturas",
+    "noFailedReports": "No hay certficiaciones fallidas para mostrar, selecciona una quesería con un rango de fechas y confirma para buscar reportes",
+    "noBatches": "No se encontraron lotes que cumplan con los parámetros recibidos, ajústalos y vuelve a intentarlo."
+  },
+  "reports": {
+    "reports": "Reportes",
+    "certifications": "Certificaciones",
+    "batches": "Lotes",
+    "weight": "Peso",
+    "sensorReadings": "Lecturas de sensores",
+    "location": "Localidad",
+    "failedCertifications": "Certificaciones fallidas",
+    "dairyDepartments": "Queserías por departamento",
+    "volumeAndWeightVariation": "Variación de volumen/peso por tipo de queso",
+    "initialVolume": "Vol. inicial",
+    "weightAfterPress": "Peso después de prensa",
+    "finalWeight": "Peso final",
+    "batchesPerMonth": "Lotes por mes en los últimos 12 meses",
+    "batchesAmount": "Número de lotes",
+    "batchesPerCertification": "Lotes por certificación",
+    "certified": "Certificado",
+    "notCertified": "No certificado",
+    "sensorReadsInPastSevenDays": "Cantidad de lecturas de sensor en los últimos 7 días",
+    "curdReads": "Lecturas Coagulación y Cocción",
+    "saltingReads": "Lecturas Salmuera",
+    "maturationReads": "Lecturas Maduración",
+    "certificationFailedReport": "Reporte de certificaciones fallidas por quesería y rango de fechas",
+    "dairyFail": "Falla en quesería"
+  },
+  "departments": {
+    "Artigas": "Artigas",
+    "Canelones": "Canelones",
+    "CerroLargo": "Cerro Largo",
+    "Colonia": "Colonia",
+    "Durazno": "Durazno",
+    "Flores": "Flores",
+    "Florida": "Florida",
+    "Lavalleja": "Lavalleja",
+    "Maldonado": "Maldonado",
+    "Montevideo": "Montevideo",
+    "Paysandu": "Paysandú",
+    "RioNegro": "Río Negro",
+    "Rivera": "Rivera",
+    "Rocha": "Rocha",
+    "Salto": "Salto",
+    "SanJose": "San José",
+    "Soriano": "Soriano",
+    "Tacuarembo": "Tacuarembó",
+    "TreintaYTres": "Treinta y Tres"
+  },
+  "enumFailType": {
+    "1": "Cero lecturas coagulación y cocción",
+    "2": "Cero lecturas salmuera",
+    "3": "Cero lecturas maduración",
+    "4": "Tiempo de coagulación y cocción menor al aceptado",
+    "5": "Tiempo de coagulación y cocción mayor al aceptado",
+    "6": "Tiempo de salmuera menor al aceptado",
+    "7": "Tiempo de salmuera mayor al aceptado",
+    "8": "Tiempo de maduración menor al aceptado",
+    "9": "Tiempo de maduración mayor al aceptado",
+    "10": "Temperatura de coagulación y cocción menor a la aceptada",
+    "11": "Temperatura de coagulación y cocción mayor a la aceptada",
+    "12": "Salinidad de salmuera menor a la aceptada",
+    "13": "Salinidad de salmuera mayor a la aceptada",
+    "14": "Temperatura de maduración menor a la aceptada",
+    "15": "Temperatura de maduración mayor a la aceptada",
+    "16": "Humedad de maduración menor a la aceptada",
+    "17": "Humedad de maduración mayor a la aceptada",
+    "18": "Tiempo de coagulación y cocción dentro del mínimo tolerado",
+    "19": "Tiempo de coagulación y cocción dentro del máximo tolerado",
+    "20": "Tiempo de salmuera dentro del mínimo tolerado",
+    "21": "Tiempo de salmuera dentro del máximo tolerado",
+    "22": "Tiempo de maduración dentro del mínimo tolerado",
+    "23": "Tiempo de maduración dentro del máximo tolerado",
+    "24": "Temperatura de coagulación y cocción dentro del mínimo tolerado",
+    "25": "Temperatura de coagulación y cocción dentro del máximo tolerado",
+    "26": "Salinidad de salmuera dentro del mínimo tolerado",
+    "27": "Salinidad de salmuera dentro del máximo tolerado",
+    "28": "Temperatura de maduración dentro del mínimo tolerado",
+    "29": "Temperatura de maduración dentro del máximo tolerado",
+    "30": "Humedad de maduración dentro del mínimo tolerado",
+    "31": "Humedad de maduración dentro del máximo tolerado"
+  }
+}

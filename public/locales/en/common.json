@@ -1,0 +1,410 @@
+{
+  "batchNumber": "Batch number",
+  "backToStart": "Back to the start",
+  "qrSuccessful": "QR read successfully!",
+  "batchIdentified": "Batch {{batch}} identified.",
+  "dairy": "Dairy",
+  "cheeseType": "Cheese type",
+  "delete": "Delete",
+  "name": "Name",
+  "add": "Add",
+  "undefined": "Undefined",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "signOut": "Sign Out",
+  "revertChanges": "Revert changes",
+  "save": "Save changes",
+  "edit": "Edit",
+  "create": "Create",
+  "fileUploaded": "File successfully uploaded",
+  "batch": "Batch",
+  "producers": "Cheese producers - INALE",
+  "selectDairy": "Select a dairy",
+  "sidebar": {
+    "main": "Main",
+    "addAdmin": "Add admin",
+    "dairies": "Dairies",
+    "cheeseTypes": "Cheese types",
+    "reports": "Reports",
+    "batches": "Batches"
+  },
+  "navbar": {
+    "searchIcon": "Search icon",
+    "search": "Search"
+  },
+  "table": {
+    "dairies": "Dairies",
+    "batch": "Batch",
+    "elaborationDate": "Elaboration date"
+  },
+  "inputs": {
+    "selectOption": "Select an option"
+  },
+  "forgotStep": {
+    "title": "Steps correction",
+    "form": {
+      "title": {
+        "curd": "Curd Step",
+        "salting": "Salting Step",
+        "maturation": "Maturation Step"
+      },
+      "initialVolume": "Initial Volume in Liters",
+      "weightBeforeSalting": "Weight previous to salting in Kilos",
+      "weightAfterMaturation": "Weight after maturation in Kilos",
+      "startDate": "Init Date",
+      "startTime": "Init Time",
+      "endDate": "End Date",
+      "endTime": "End Time",
+      "save": "Save Changes",
+      "cancel": "Back",
+      "betweenCurdAndSalting": "Between curd and salting"
+    },
+    "confirmation": {
+      "please": "Please, confirm that batch number {{batch}} is currently in the {{step}} step.",
+      "pleaseFinished": "Please, confirm that batch number {{batch}} is finished.",
+      "systemCheck": "The syste will check the values of these steps within the batch certification period selected.",
+      "confirm": "Confirm Changes",
+      "cancel": "Go back to Correction"
+    }
+  },
+  "step": {
+    "NotStarted": "Not started",
+    "Started": "Started",
+    "Curd": "Curd",
+    "CurdFinished": "Curd finished",
+    "Salting": "Salting",
+    "Maturation": "Maturation",
+    "Finished": "Finished",
+    "forgot": "I forgot a step",
+    "successfullyStarted": "Batch {{batchName}} is now in the {{step}} step!"
+  },
+  "generateQr": {
+    "generateQr": "Generate QR(s)",
+    "downloadQr": "Download QR(s)",
+    "description": "Select dairies and batch quantity. Once the query is completed, click Download QR. A Zip with a folder per dairy will be donwloaded.",
+    "dairyName": "Dairy name",
+    "batchQuantity": "Batch quantity",
+    "batchTotal": "Batches in total",
+    "addDairy": "Add dairy",
+    "qrTag": "Dairy {{dairyName}} - Batch {{batchNumber}}",
+    "dairyLimit": "No more dairies available",
+    "noDairySelected": "None dairy selected"
+  },
+  "startBatch": {
+    "volumePlaceholder": "Volume (lts)",
+    "volumeText": "Initial volume",
+    "newQrIdentified": "New QR identified!",
+    "description": "To start a batch, please enter a name for the batch and ",
+    "descriptionPart2A": "select the cheese type",
+    "descriptionPart2B": "press {{buttonText}}",
+    "batchName": "Name of the batch",
+    "error": "The batch could not be started, re-read the QR and try again.",
+    "required": "The cheese type is required to start the batch",
+    "start": "Start batch"
+  },
+  "startCurd": {
+    "description": "Start the curdling process now or re-scan the QR when it's time to start.",
+    "batchStarted": "Batch {{batch}} has been started successfully!",
+    "error": "The curd step could not be started, re-read the QR and try again.",
+    "start": "Start curd"
+  },
+  "finishCurd": {
+    "error": "The curd step could not be finished, re-read the QR and try again.",
+    "curdFinished": "The curd is finished.",
+    "finish": "Finish curd"
+  },
+  "startSalting": {
+    "weightPlaceholder": "Weight (kgs)",
+    "weight": "Pre-salted weight",
+    "error": "The salting step could not be started, re-read the QR and try again.",
+    "start": "Start salting"
+  },
+  "startMaturation": {
+    "error": "The maturation step could not be started, re-read the QR and try again.",
+    "start": "Start maturation"
+  },
+  "finishBatch": {
+    "weightPlaceholder": "Weight (kgs)",
+    "step": "Batch {{batch}} is in the maturation stage!",
+    "weight": "Post maturation weight",
+    "error": "The batch could not be finished, re-read the QR and try again.",
+    "batchFinished": "The batch {{batchName}} was finished successfully!",
+    "finish": "Finish batch"
+  },
+  "batchInfo": {
+    "step": "Current step",
+    "startDate": "Init date"
+  },
+  "addAdmin": {
+    "title": "Add New Admin",
+    "success": "User {{userEmail}} has been added as admin.",
+    "description": "To add a new admin enter his/her email.",
+    "submit": "Add admin"
+  },
+  "notAuthorized": {
+    "title": "Not Authorized",
+    "descriptionSignedIn": "We couldn't validate your credentials. Please, ask a manager to send you an invite."
+  },
+  "cheeseTypes": {
+    "name": "Cheese types",
+    "productInfo": "Product information",
+    "registrationCode": "Registration code",
+    "bromatologicalForm": "Bromatological form (PDF)",
+    "bromatologicalFormFileName": "file.pdf",
+    "bromatologicalFormNotDefined": "Not defined",
+    "uploadFile": "Attach file",
+    "elaborationProcess": "Elaboration process",
+    "variable": "Variable",
+    "minValue": "Minimum value",
+    "maxValue": "Maximum value",
+    "temperature": "Temperature",
+    "degrees": "˚C",
+    "time": "Time",
+    "hours": "hs",
+    "salinity": "Salinity",
+    "salinityUnit": "˚B",
+    "humidity": "Humidity",
+    "percentage": "%",
+    "cheeseTypeDeleted": "Cheese type deleted successfully",
+    "cheeseTypeRestored": "Cheese type restored successfully",
+    "cheeseTypeCreated": "Cheese type created successfully",
+    "cheeseTypeUpdated": "Cheese type updated successfully",
+    "errorLoadingCheeseTypes": "Error loading cheese types",
+    "deleteCheeseType": "Delete cheese type",
+    "deleteCheeseTypeText": "Delete cheese type",
+    "showDeleted": "Show deleted",
+    "list": "Cheese types list",
+    "createCheeseType": "Create cheese type"
+  },
+  "dairies": {
+    "name": "Dairy name",
+    "companyNumber": "Company Number",
+    "rut": "RUT",
+    "registrationCode": "Registration code",
+    "endorsementDate": "Endorsement date",
+    "bromatologicalRegistry": "Bromatological registry",
+    "dicoseNumber": "Dicose",
+    "companyOwner": "Company Owner",
+    "address": "Address",
+    "contactPhone": "Contact phone",
+    "errorLoadingDairies": "Error loading dairies",
+    "errorLoadingDairy": "Error loading dairy",
+    "activeDairies": "Active dairies",
+    "list": "Dairies list",
+    "registeredEmployees": "Registered employees",
+    "editProfile": "Edit profile",
+    "enabledSince": "Enabled since {{date}}",
+    "enabledDate": "Enabled date",
+    "create": "Create",
+    "createDairy": "Create dairy",
+    "deleteDairy": "Delete dairy",
+    "showDeleted": "Show deleted",
+    "deleteDairyText": "The dairy can be restored after deleted",
+    "companyInfo": "Company information",
+    "department": "Department",
+    "dairyUpdated": "Dairy updated successfully",
+    "dairyNotUpdated": "No changes were found, dairy not updated",
+    "dairyCreated": "Dairy created successfully",
+    "dairyDeleted": "Dairy deleted successfully",
+    "dairyRestored": "Dairy restored successfully",
+    "employees": {
+      "name": "Employees",
+      "addEmployee": "Add employee",
+      "deleteEmployeeTitle": "Delete employee",
+      "document": "Identity card",
+      "deleteEmployeeText": "Are you sure you want to delete this employee?"
+    },
+    "cheeseTypes": {
+      "batchesInProduction": "Batches in production",
+      "errorLoadingDairyCheeseTypes": "Error loading cheese types",
+      "name": "Cheese types",
+      "deleteDairyCheeseTypeTitle": "Delete cheese type",
+      "deleteDairyCheeseTypeText": "The cheese type can be restored after deleted",
+      "showDeleted": "Show deleted",
+      "addCheeseType": "Add cheese type"
+    }
+  },
+  "pagination": { "previous": "Previous", "next": "Next" },
+  "errors": {
+    "dairyNotFound": "An error happened and the dairy couldn't be found. Contact us.",
+    "dairyWithoutCheeseType": "The dairy does not have any type of cheese associated with it, add one to it and try again.",
+    "batchNotFound": "An error happened and the batch couldn't be found. Contact us.",
+    "cheeseTypeNotFound": "An error happened and the cheese type couldn't be found. Contact us.",
+    "default": "An error has occurred. Please, try again later.",
+    "batchNotFinished": "The batch cannot be finished, please reload the page and try again.",
+    "batchCannotBeFinished": "Batch cannot be finished,  please reload the page and try again.",
+    "batchInfoCannotBeStored": "The batch could not be finished, as there was an error saving the information, please try again later.",
+    "cannotFindCertificateMessage": "No certification message found for this batch. Please refresh the page and try again or contact us if it's not resolved.",
+    "userAlreadyInvited": "The user was already invited.",
+    "unrecognizedStartingBatch": "Unrecognized error initialized batch, please try again later.",
+    "unrecognizedUpdatingCheeseType": "Unrecognized error updating cheese type, please try again later.",
+    "unrecognizedDeletingCheeseType": "Unrecognized error deleting cheese type, please try again later.",
+    "unrecognizedRestoringCheeseType": "Unrecognized error restoring cheese type, please try again later.",
+    "unrecognizedCreatingCheeseType": "Unrecognized error creating cheese types, please try again later.",
+    "unrecognizedGettingCheeseType": "Unrecognized error getting cheese types, please try again later.",
+    "unrecognizedGettingDairy": "Unrecognized error getting dairy, please try again later.",
+    "unrecognizedGettingBatch": "Unrecognized error getting batch, please try again later.",
+    "unrecognizedGettingSensorsData": "Unrecognized error getting sensors data for this batch, please try again later.",
+    "unrecognizedUpdatingDairy": "Unrecognized error updating dairy, please try again later.",
+    "unrecognizedCreatingDairy": "Unrecognized error creating dairy, please try again later.",
+    "unrecognizedDeletingDairy": "Unrecognized error deleting dairy, please try again later.",
+    "unrecognizedRestoringDairy": "Unrecognized error restoring dairy, please try again later.",
+    "unrecognizedGettingDairyLocationStats": "Unrecognized error getting dairy location stats, please try again later.",
+    "unrecognizedGettingFailedCertifications": "Unrecognized error getting certifications failed, please try again later.",
+    "dairyWithRutAlreadyExists": "A dairy with that rut already exists, please fix this and try again.",
+    "cheeseTypeWithNameAlreadyExists": "A cheese type with that name already exists, please fix this and try again.",
+    "employeeWithDocumentAlreadyExist": "An employee with that document already exist, please use another document.",
+    "invalidMail": "This mail is not valid",
+    "invalidQR": "The QR is invalid. Read it again and retry or try with another QR.",
+    "unrecognizedGettingBatches": "Unrecognized error getting batches, please try again later.",
+    "unrecognizedGettingStats": "Unrecognized error getting stats, please try again later.",
+    "consistencyErrorGettingBatchesByDate": "Starting date must be prior to the finishing date",
+    "unrecognizedCountingSensorReads": "Unrecognized error counting sensor reads, please try again later."
+  },
+  "certification": {
+    "sucessfullyCertified": {
+      "title": "Certified batch",
+      "description": "By scanning the QR the final consumer will be able to see the INALE certification",
+      "button": "See certificate"
+    },
+    "waitingReview": {
+      "title": "Batch not certified yet",
+      "description": "The batch does not have the INALE certification yet, either because not all the stages have been completed or because it is in the review process.",
+      "willBeChecked": "INALE will verify the status of your batch to grant or not the corresponding certification. This certification usually ends in the next 10 minutes, so we recommend that you scan the QR again after completing this period of time."
+    },
+    "certificationFailed": {
+      "title": "Batch not certified",
+      "description": "The batch does not have the INALE certification for not having met all the parameters established during its production.",
+      "button": "See certificate",
+      "reasonForFailure": "Reason for failure",
+      "undefinedReason": "Undefined reason"
+    },
+    "certificationResult": {
+      "title": "Quality certification",
+      "certifiedDescription": "This cheese has received certification from INALE for having met all the parameters established during its preparation.",
+      "notCertifiedDescription": "This cheese has not received certification from INALE because it did not meet all the parameters established during its preparation.",
+      "producedBy": "Produced by",
+      "certificationDate": "Certification date"
+    }
+  },
+  "batchInfoCard": {
+    "title": "Batch information",
+    "batchNumber": "# Batch",
+    "beginDate": "Begin date",
+    "cheese": "Cheese"
+  },
+  "batchStagesCard": {
+    "title": "Fabrication process",
+    "curd": "Curd",
+    "salting": "Salting",
+    "maturation": "Maturation",
+    "variable": "Variable",
+    "result": "Result",
+    "range": "Range"
+  },
+  "batches": {
+    "title": "Certfication List",
+    "inProcess": "Batches\nin process",
+    "certified": "Certified\nbatches",
+    "rejected": "Rejected\nbatches",
+    "list": {
+      "batch": "Batch",
+      "batchDate": "Date"
+    },
+    "form": {
+      "submit": "Filter",
+      "error": "Starting date must be prior to the finishing date"
+    }
+  },
+  "producerStart": {
+    "title": "Cheese production - INALE",
+    "welcome": "Welcome to the cheese production app, please read a QR code received from INALE to start.",
+    "ifNoQrCode": "If you have no QR codes, please ask INALE for some"
+  },
+  "emptyStates": {
+    "noDairies": "There are no dairies in the system yet!",
+    "noCheeseTypesToChoose": "There are no cheese types to add to the dairy",
+    "noSensorReadsYet": "No sensor reads to show, please select a dairy and confirm to look for sensor reads",
+    "noFailedReports": "No failed certifications to show, please select a dairy with a date range and confirm to look for reports",
+    "noBatches": "There are no batches with the received filters, please change them and try again."
+  },
+  "reports": {
+    "reports": "Reports",
+    "certifications": "Certifications",
+    "batches": "Batches",
+    "weight": "Weight",
+    "sensorReadings": "Sensor readings",
+    "location": "Location",
+    "failedCertifications": "Failed certifications",
+    "dairyDepartments": "Dairies by department",
+    "volumeAndWeightVariation": "Volume/weight variation by cheese type",
+    "initialVolume": "Initial volume",
+    "weightAfterPress": "Weight after press",
+    "finalWeight": "Final weight",
+    "batchesPerMonth": "Batches per month in the last 12 months",
+    "batchesAmount": "Batches amount",
+    "batchesPerCertification": "Batches by certification",
+    "certified": "Certified",
+    "notCertified": "Not certified",
+    "sensorReadsInPastSevenDays": "Sensor reads in the last 7 days",
+    "curdReads": "Curd Reads",
+    "saltingReads": "Salting Reads",
+    "maturationReads": "Maturation Reads",
+    "certificationFailedReport": "Certifications failed reports by dairy and date range",
+    "dairyFail": "Dairy fail"
+  },
+  "departments": {
+    "Artigas": "Artigas",
+    "Canelones": "Canelones",
+    "CerroLargo": "Cerro Largo",
+    "Colonia": "Colonia",
+    "Durazno": "Durazno",
+    "Flores": "Flores",
+    "Florida": "Florida",
+    "Lavalleja": "Lavalleja",
+    "Maldonado": "Maldonado",
+    "Montevideo": "Montevideo",
+    "Paysandu": "Paysandú",
+    "RioNegro": "Río Negro",
+    "Rivera": "Rivera",
+    "Rocha": "Rocha",
+    "Salto": "Salto",
+    "SanJose": "San José",
+    "Soriano": "Soriano",
+    "Tacuarembo": "Tacuarembó",
+    "TreintaYTres": "Treinta y Tres"
+  },
+  "enumFailType": {
+    "1": "Zero curd readings",
+    "2": "Zero salting readings",
+    "3": "Zero maturation readings",
+    "4": "Curd time less than accepted",
+    "5": "Curd time greater than accepted",
+    "6": "Salting time less than accepted",
+    "7": "Salting time greater than accepted",
+    "8": "Maturation time less than accepted",
+    "9": "Maturation time greater than accepted",
+    "10": "Curd temperature less than accepted",
+    "11": "Curd temperature greater than accepted",
+    "12": "Salting salinity less than accepted",
+    "13": "Salting salinity greater than accepted",
+    "14": "Maturation temperature less than accepted",
+    "15": "Maturation temperature greater than accepted",
+    "16": "Maturation humidity less than accepted",
+    "17": "Maturation humidity greater than accepted",
+    "18": "Curd time within minimum tolerance",
+    "19": "Curd time within maximum tolerance",
+    "20": "Salting time within minimum tolerance",
+    "21": "Salting time within maximum tolerance",
+    "22": "Maturation time within minimum tolerance",
+    "23": "Maturation time within maximum tolerance",
+    "24": "Curd temperature within minimum tolerance",
+    "25": "Curd temperature within maximum tolerance",
+    "26": "Salting salinity within minimum tolerance",
+    "27": "Salting salinity within maximum tolerance",
+    "28": "Maturation temperature within minimum tolerance",
+    "29": "Maturation temperature within maximum tolerance",
+    "30": "Maturation humidity within minimum tolerance",
+    "31": "Maturation humidity within maximum tolerance"
+  }
+}

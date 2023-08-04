@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noUncheckedIndexedAccess": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "@utils": ["./src/utils"],
+      "@constants": ["./src/utils/constants"],
+      "@types": ["./src/types"],
+      "@hooks": ["./src/hooks"],
+      "@atoms/*": ["./src/components/atoms/*"],
+      "@molecules/*": ["./src/components/molecules/*"],
+      "@organisms/*": ["./src/components/organisms/*"],
+      "@templates/*": ["./src/components/templates/*"],
+      "@pages/*": ["./src/components/pages/*"],
+      "@context": ["./src/context"],
+      "@controllers/*": ["./src/server/controllers/*"],
+      "@api/*": ["./src/server/api/*"],
+      "@infrastructure/*": ["./src/server/infrastructure/*"],
+      "@db": ["./src/server/db"],
+      "@schemas": ["./src/types/schemas"],
+      "@errors": ["./src/server/errors"]
+    }
+  },
+  "include": [
+    ".eslintrc.cjs",
+    "next-env.d.ts",
+    "jest.config.cjs",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs",
+    "next-i18next.config.js",
+    "next.config.js",
+    "next-i18next.config.js"
+  ],
+  "exclude": ["node_modules"]
+}

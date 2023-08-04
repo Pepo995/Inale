@@ -1,0 +1,172 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "mysql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["filteredRelationCount"]
+}
+
+model User {
+    id        String   @id @default(cuid())
+    email String? @unique
+    dairy Dairy?
+    isAdmin Boolean @default(false)
+    name String?
+}
+
+model Dairy {
+    name String
+
+    registrationCode String?
+    bromatologicalRegistry Int?
+    companyNumber Int?
+    dicoseNumber Int?
+    rut BigInt @id
+    address String?
+    contactPhone String?
+    department Department?
+
+    createdAt DateTime @default(now())
+    deleted DateTime?
+    enabledSince DateTime?
+    endorsementDate DateTime?
+
+    producerId    String  @unique
+
+    producer User     @relation(fields: [producerId], references: [id])
+    curdSensorData CurdSensorData[]
+    saltingSensorData SaltingSensorData[]
+    maturationSensorData MaturationSensorData[]
+    cheeseTypes DairyCheeseType[]
+    employees Employee[]
+}
+
+model Employee {
+    document BigInt @id
+    name String
+    dairyRut BigInt
+    dairy Dairy @relation(fields: [dairyRut], references: [rut])
+}
+
+model CheeseType {
+    name String @id
+    dairies DairyCheeseType[]
+    registrationCode String?
+    bromatologicalForm String?
+
+    minCurdTemperature Int
+    maxCurdTemperature Int
+    minCurdMinutes Int
+    maxCurdMinutes Int
+
+    minSaltingSalinity Int
+    maxSaltingSalinity Int
+    minSaltingMinutes Int
+    maxSaltingMinutes Int
+
+    minMaturationTemperature Int
+    maxMaturationTemperature Int
+    minMaturationHumidity Int
+    maxMaturationHumidity Int
+    minMaturationMinutes Int
+    maxMaturationMinutes Int
+
+    deleted DateTime?
+}
+
+model DairyCheeseType {
+    dairyRut BigInt
+    cheeseTypeName String
+    dairy Dairy @relation(fields: [dairyRut], references: [rut])
+    cheeseType CheeseType @relation(fields: [cheeseTypeName], references: [name])
+    batches Batch[]
+    deleted DateTime?
+    @@id([dairyRut, cheeseTypeName])
+    @@index([dairyRut])
+    @@index([cheeseTypeName])
+}
+
+model Batch {
+   id String @default(cuid())
+    createdAt DateTime @default(now())
+
+    dairyRut BigInt
+    cheeseTypeName String
+    batchName String?
+    curdInitDateTime DateTime?
+    curdEndDateTime DateTime?
+    saltingInitDateTime DateTime?
+    maturationInitDateTime DateTime?
+    maturationEndDateTime DateTime?
+    initialVolume Float?
+    weightBeforeSalting Float?
+    weightAfterMaturation Float?
+    certified Certified @default(WaitingReview)
+    started Boolean @default(false)
+    dairyCheeseType DairyCheeseType @relation(fields: [dairyRut, cheeseTypeName], references: [dairyRut, cheeseTypeName])
+    certificationMessage String? @db.Text
+    blockchainCertificationId String? @unique
+    @@id([id])
+    @@index([dairyRut, cheeseTypeName])
+}
+
+model CurdSensorData {
+    dairyRut BigInt
+    datetime DateTime @db.DateTime(0)
+    temperature Float
+    dairy Dairy @relation(fields: [dairyRut], references: [rut])
+    @@id([dairyRut, datetime])
+    @@index([dairyRut])
+}
+
+model SaltingSensorData {
+    dairyRut BigInt
+    datetime DateTime @db.DateTime(0)
+    salinity Float
+    dairy Dairy @relation(fields: [dairyRut], references: [rut])
+    @@id([dairyRut, datetime])
+    @@index([dairyRut])
+}
+
+model MaturationSensorData {
+    dairyRut BigInt
+    datetime DateTime @db.DateTime(0)
+    temperature Float
+    humidity Float
+    dairy Dairy @relation(fields: [dairyRut], references: [rut])
+    @@id([dairyRut, datetime])
+    @@index([dairyRut])
+}
+
+enum Certified {
+	WaitingReview
+	SuccessfullyCertified
+	CertificationFailed
+}
+
+enum Department {
+	Artigas
+    Canelones
+    CerroLargo
+    Colonia
+    Durazno
+    Flores
+    Florida
+    Lavalleja
+    Maldonado
+    Montevideo
+	Paysandu
+    RioNegro
+    Rivera
+    Rocha
+    Salto
+    SanJose
+    Soriano
+    Tacuarembo
+    TreintaYTres
+}

@@ -1,0 +1,96 @@
+const DummyData = [
+  {
+    id: "1",
+    lote: "1234",
+    fecha: "2021-10-10",
+    queseria: "queseria 1",
+    tipoDeQueso: "tipo de queso 1",
+    cta: "ver mas"
+  },
+  {
+    id: "2",
+    lote: "1235",
+    fecha: "2021-10-10",
+    queseria: "queseria 2",
+    tipoDeQueso: "tipo de queso 2",
+  },
+  {
+    id: "3",
+    lote: "1236",
+    fecha: "2021-10-10",
+    queseria: "queseria 3",
+    tipoDeQueso: "tipo de queso 3",
+  },
+  {
+    id: "4",
+    lote: "1237",
+    fecha: "2021-10-10",
+    queseria: "queseria 4",
+    tipoDeQueso: "tipo de queso 4",
+  },
+  {
+    id: "5",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 5",
+    tipoDeQueso: "tipo de queso 5",
+  },
+  {
+    id: "6",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 6",
+    tipoDeQueso: "tipo de queso 6",
+  },
+  {
+    id: "7",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 7",
+    tipoDeQueso: "tipo de queso 7",
+  },
+  {
+    id: "8",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 8",
+    tipoDeQueso: "tipo de queso 8",
+  },
+  {
+    id: "9",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 9",
+    tipoDeQueso: "tipo de queso 9",
+  },
+  {
+    id: "10",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 10",
+    tipoDeQueso: "tipo de queso 10",
+  },
+  {
+    id: "11",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 11",
+    tipoDeQueso: "tipo de queso 11",
+  },
+  {
+    id: "12",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 12",
+    tipoDeQueso: "tipo de queso 12",
+  },
+  {
+    id: "13",
+    lote: "1238",
+    fecha: "2021-10-10",
+    queseria: "queseria 13",
+    tipoDeQueso: "tipo de queso 13",
+  },
+];
+
+export default DummyData;
